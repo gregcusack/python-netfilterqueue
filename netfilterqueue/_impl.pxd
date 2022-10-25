@@ -218,6 +218,7 @@ cdef class Packet:
     cpdef Py_ssize_t get_payload_len(self)
     cpdef double get_timestamp(self)
     cpdef bytes get_payload(self)
+    # cpdef set_payload(self, bytes payload)
     cpdef set_payload(self, bytes payload)
     cpdef set_mark(self, u_int32_t mark)
     cpdef get_mark(self)
