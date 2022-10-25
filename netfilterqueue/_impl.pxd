@@ -219,7 +219,7 @@ cdef class Packet:
     cpdef double get_timestamp(self)
     cpdef bytes get_payload(self)
     # cpdef set_payload(self, bytes payload)
-    cpdef set_payload(self, bytes payload)
+    cpdef set_payload(self, payload)
     cpdef set_mark(self, u_int32_t mark)
     cpdef get_mark(self)
     cpdef retain(self)
