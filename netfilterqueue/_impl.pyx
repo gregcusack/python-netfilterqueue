@@ -177,6 +177,8 @@ cdef class Packet:
         return self.timestamp.tv_sec + (self.timestamp.tv_usec/1000000.0)
 
     cpdef set_payload(self, bytes payload):
+        print("Setting payload!")
+        print(payload)
         """Set the new payload of this packet."""
         self._given_payload = payload
 
