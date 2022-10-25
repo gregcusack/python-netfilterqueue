@@ -181,6 +181,9 @@ cdef class Packet:
         print(payload)
         """Set the new payload of this packet."""
         self._given_payload = payload
+        print("payload post set")
+        print(self._given_payload)
+
 
     cpdef set_mark(self, u_int32_t mark):
         self._given_mark = mark
