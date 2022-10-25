@@ -116,6 +116,9 @@ cdef class Packet:
 
         cdef u_int32_t modified_payload_len = 0
         cdef unsigned char *modified_payload = NULL
+        print("greg. verdict called. print payload")
+        print(self._given_payload)
+        print(self._mark_is_set)
         if self._given_payload:
             modified_payload_len = len(self._given_payload)
             modified_payload = self._given_payload
